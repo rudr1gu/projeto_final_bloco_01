@@ -11,7 +11,11 @@ public class CalcadoController implements CalcadoRepository {
 
     @Override
     public void AtualizarEstoque(Calcado calcado) {
-       
+        if (calcadosEstoque.getCalcados().contains(calcado)) {
+            calcadosEstoque.getCalcados().add(calcado);
+        } else {
+            System.out.println("Calcado não encontrado");
+        }
     }
 
     @Override
@@ -73,5 +77,4 @@ public class CalcadoController implements CalcadoRepository {
         }
         return null;
     }
-
 }
