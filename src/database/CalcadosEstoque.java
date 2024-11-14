@@ -9,7 +9,6 @@ import model.Tennis;
 
 
 public class CalcadosEstoque {
-    //instancia um arraylist de calcados para armazenar os calcados
     private ArrayList<Calcado> calcados = new ArrayList<Calcado>();
 
     Tennis tennis1 = new Tennis("Nike", "Air Max", "Preto", 500.00, 10, 42, "Corrida");
@@ -34,6 +33,16 @@ public class CalcadosEstoque {
         calcados.add(chuteira1);
         calcados.add(chuteira2);
         calcados.add(chuteira3);
+    }
+
+    public ArrayList<Calcado> getCalcados() {
+        return calcados;
+    }
+
+    public void mostrarCalcados() {
+        for (Calcado calcado : calcados) {
+            calcado.mostrarInformacoes();
+        }
     }
 
 }

@@ -1,10 +1,14 @@
 import java.util.Scanner;
 
+import database.CalcadosEstoque;
+
 public class Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcao;
         boolean sair = false;
+
+        CalcadosEstoque calcadosEstoque = new CalcadosEstoque();
 
         System.out.println("Bem-vindo ao Rudr1gu-Shoes!");
 
@@ -22,6 +26,7 @@ public class Menu {
             switch (opcao) {
                 case 1:
                     System.out.println("Mostrar Todos os Produtos");
+                    calcadosEstoque.mostrarCalcados();
                     break;
                 case 2:
                     System.out.println("Comprar Produtos");
