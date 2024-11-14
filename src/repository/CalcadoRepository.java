@@ -3,10 +3,11 @@ package repository;
 import model.Calcado;
 
 public interface CalcadoRepository {
-    void adicionarCalcado(Calcado calcado);
-    void removerCalcado(Calcado calcado);
-    void mostrarCalcados();
-    void mostrarCalcadosPorMarca(String marca);
-    void mostrarCalcadosPorModelo(String modelo);
-    void mostrarCalcadosPorTamanho(int tamanho);
+
+    public void AtualizarEstoque(Calcado calcado);
+    public void removerCalcado(Calcado calcado);
+    public void mostrarCalcados();
+    public void mostrarCalcadosPorMarca(String marca);
+    public void mostrarCalcadosPorModelo(String modelo);
+    public void mostrarCalcadosPorTamanho(int tamanho);
 }
