@@ -74,6 +74,7 @@ public class Menu {
                     break;
                 case 6:
                     sair = true;
+                    MenuView.creditos();
                     break;
                 default:
                     System.out.println("Opção inválida!");

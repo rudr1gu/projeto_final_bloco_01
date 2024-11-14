@@ -10,4 +10,11 @@ public  abstract class MenuView {
         System.out.println("6 - Sair");
         System.out.print("Digite a opção desejada: ");
     }
+
+    public static void creditos() {
+        System.out.println("Desenvolvido por: ");
+        System.out.println("Rodrigo Santos Silva - 2024");
+        System.out.println("github.com/rudr1gu");
+        System.out.println("Generation Brasil - Java78"); 
+    }
 }
