@@ -13,7 +13,7 @@ public class Menu {
             System.out.println("2 - Comprar Produtos");
             System.out.println("3 - Sair");
             System.out.print("Digite a opção desejada: ");
-            opcao = Integer.parseInt(System.console().readLine());
+            opcao = scanner.nextInt();
 
             switch (opcao) {
                 case 1:
