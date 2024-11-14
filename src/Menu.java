@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import Controller.CalcadoController;
+import controller.CalcadoController;
 import model.Calcado;
 import util.KeyPress;
 

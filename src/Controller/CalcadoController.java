@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 import database.CalcadosEstoque;
 import model.Calcado;
