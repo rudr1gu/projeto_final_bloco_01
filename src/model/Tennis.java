@@ -20,6 +20,7 @@ public class Tennis extends Calcado{
     public void mostrarInformacoes() {
         super.mostrarInformacoes();
         System.out.println("Tipo de Tennis: " + tipoTennis);
+        System.out.println("");
     }
 
 }

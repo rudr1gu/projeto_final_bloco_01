@@ -20,5 +20,6 @@ public class Bota extends Calcado{
     public void mostrarInformacoes() {
         super.mostrarInformacoes();
         System.out.println("Tipo de Bota: " + tipoBota);
+        System.out.println("");
     }
 }

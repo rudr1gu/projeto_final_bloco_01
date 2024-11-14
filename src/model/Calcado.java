@@ -66,6 +66,7 @@ public abstract class Calcado {
     }
 
     public void mostrarInformacoes(){
+        System.out.println("");
         System.out.println("Marca: " + marca);
         System.out.println("Modelo: " + modelo);
         System.out.println("Cor: " + cor);

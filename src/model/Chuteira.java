@@ -20,6 +20,7 @@ public class Chuteira extends Calcado{
     public void mostrarInformacoes() {
         super.mostrarInformacoes();
         System.out.println("Tipo de Chuteira: " + tipoChuteira);
+        System.out.println();
     }
 
 }
