@@ -11,13 +11,13 @@ import model.Tennis;
 public class CalcadosEstoque {
     private ArrayList<Calcado> calcados = new ArrayList<Calcado>();
 
-    Tennis tennis1 = new Tennis("Nike", "Air Max", "Preto", 500.00, 10, 42, "Corrida");
+    Tennis tennis1 = new Tennis("Nike", "Air-Max", "Preto", 500.00, 10, 42, "Corrida");
     Tennis tennis2 = new Tennis("Adidas", "Superstar", "Branco", 300.00, 5, 40, "Casual");
     Tennis tennis3 = new Tennis("Mizuno", "Wave", "Azul", 400.00, 7, 41, "Corrida");
 
     Bota bota1 = new Bota("Timberland", "Yellow Boot", "Amarelo", 600.00, 3, 42, "Trilha");
     Bota bota2 = new Bota("Caterpillar", "CAT", "Marrom", 400.00, 2, 41, "Trabalho");
-    Bota bota3 = new Bota("Bull Terrier", "Fox", "Preto", 350.00, 4, 40, "Trilha");
+    Bota bota3 = new Bota("Bull-Terrier", "Fox", "Preto", 350.00, 4, 40, "Trilha");
 
     Chuteira chuteira1 = new Chuteira("Nike", "Mercurial", "Verde", 800.00, 6, 42, "Campo");
     Chuteira chuteira2 = new Chuteira("Adidas", "Predator", "Preto", 700.00, 8, 41, "Society");
