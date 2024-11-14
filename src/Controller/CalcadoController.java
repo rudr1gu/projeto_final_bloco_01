@@ -64,6 +64,8 @@ public class CalcadoController implements CalcadoRepository {
         if(calcadosEstoque.getCalcados().contains(calcado) && calcado.getQuantidade() > 0) {
             calcado.setQuantidade(calcado.getQuantidade() - 1);
             System.out.println("Compra realizada com sucesso!");
+            System.out.println("Quantidade restante: " + calcado.getQuantidade());
+            System.out.println("Preço total: " + calcado.getPreco());
         } else {
             System.out.println("Produto não encontrado ou sem estoque");
         }   
