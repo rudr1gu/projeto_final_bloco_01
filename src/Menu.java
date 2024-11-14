@@ -1,37 +1,50 @@
 import java.util.Scanner;
 
+import services.MenuServices;
+import util.KeyPress;
+import util.MenuView;
+
 public class Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcao;
         boolean sair = false;
 
-        System.out.println("Bem-vindo ao e-commerce!");
-
+        System.out.println("Bem-vindo ao RudShoes!");
 
         while (!sair) {
-            System.out.println("1 - Mostrar Produtos");
-            System.out.println("2 - Comprar Produtos");
-            System.out.println("3 - Sair");
-            System.out.print("Digite a opção desejada: ");
-            opcao = Integer.parseInt(System.console().readLine());
+            MenuView.menu();
+            opcao = scanner.nextInt();
 
             switch (opcao) {
                 case 1:
-                    System.out.println("Cadastrando...");
+                    MenuServices.mostrarProdutos();
+                    KeyPress.pressKeyToContinue();
                     break;
                 case 2:
-                    System.out.println("Listando...");
+                    MenuServices.comprarProdutos();
+                    KeyPress.pressKeyToContinue();
                     break;
                 case 3:
+                    MenuServices.mostrarProdutosPorMarca();
+                    KeyPress.pressKeyToContinue();
+                    break;
+                case 4:
+                    MenuServices.mostrarProdutosPorModelo();
+                    KeyPress.pressKeyToContinue();
+                    break;
+                case 5:
+                    MenuServices.mostrarProdutosPorTamanho();
+                    KeyPress.pressKeyToContinue();
+                    break;
+                case 6:
                     sair = true;
+                    MenuView.creditos();
                     break;
                 default:
                     System.out.println("Opção inválida!");
             }
         }
-
         scanner.close();
     }
-
 }
