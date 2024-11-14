@@ -8,7 +8,6 @@ public class Menu {
 
         System.out.println("Bem-vindo ao e-commerce!");
 
-
         while (!sair) {
             System.out.println("1 - Mostrar Produtos");
             System.out.println("2 - Comprar Produtos");
@@ -30,8 +29,6 @@ public class Menu {
                     System.out.println("Opção inválida!");
             }
         }
-
         scanner.close();
     }
-
 }
