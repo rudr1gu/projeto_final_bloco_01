@@ -15,10 +15,9 @@ public class Menu {
         String[] marcas = { "Nike", "Adidas", "Mizuno", "Timberland", "Caterpillar", "Bull Terrier", "Puma" };
         int[] tamanhos = { 42, 40, 41 };
 
-
         CalcadoController calcadoController = new CalcadoController();
 
-        System.out.println("Bem-vindo ao Rudr1gu-Shoes!");
+        System.out.println("Bem-vindo ao RudShoes!");
 
         while (!sair) {
             MenuView.menu();
