@@ -38,6 +38,10 @@ public class Menu {
                     KeyPress.pressKeyToContinue();
                     break;
                 case 6:
+                    MenuServices.entrarComoAdm();
+                    KeyPress.pressKeyToContinue();
+                    break;
+                case 7:
                     sair = true;
                     MenuView.creditos();
                     break;
