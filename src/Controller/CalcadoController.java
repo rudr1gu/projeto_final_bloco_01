@@ -8,6 +8,10 @@ public class CalcadoController implements CalcadoRepository {
 
     CalcadosEstoque calcadosEstoque = new CalcadosEstoque();
     
+    @Override
+    public void adicionarCalcado(Calcado calcado) {
+        calcadosEstoque.getCalcados().add(calcado);
+    }
 
     @Override
     public void AtualizarEstoque(Calcado calcado) {

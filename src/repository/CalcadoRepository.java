@@ -4,6 +4,7 @@ import model.Calcado;
 
 public interface CalcadoRepository {
 
+    public void adicionarCalcado(Calcado calcado);
     public void AtualizarEstoque(Calcado calcado);
     public void removerCalcado(Calcado calcado);
     public void mostrarCalcados();
