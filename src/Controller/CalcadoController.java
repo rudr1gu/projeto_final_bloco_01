@@ -6,8 +6,8 @@ import repository.CalcadoRepository;
 
 public class CalcadoController implements CalcadoRepository {
 
-    CalcadosEstoque calcadosEstoque = new CalcadosEstoque();
-    
+    public CalcadosEstoque calcadosEstoque = new CalcadosEstoque();
+
     @Override
     public void adicionarCalcado(Calcado calcado) {
         calcadosEstoque.getCalcados().add(calcado);

@@ -1,5 +1,6 @@
 package services;
 
+import java.util.List;
 import java.util.Scanner;
 
 import controller.CalcadoController;
@@ -13,9 +14,11 @@ public abstract class MenuServices {
     static CalcadoController calcadoController = new CalcadoController();
     static Scanner scanner = new Scanner(System.in);
 
-    static String[] modelos = { "Air-Max", "Superstar", "Wave", "Yellow Boot", "CAT", "Fox", "Mercurial", "Predator","Future" };
-    static String[] marcas = { "Nike", "Adidas", "Mizuno", "Timberland", "Caterpillar", "Bull-Terrier", "Puma" };
-    static int[] tamanhos = { 42, 40, 41 };
+        static List<Calcado> calcados = calcadoController.calcadosEstoque.getCalcados();
+        
+        static String[] modelos = calcados.stream().map(Calcado::getModelo).toArray(String[]::new);
+        static String[] marcas = calcados.stream().map(Calcado::getMarca).toArray(String[]::new);
+        static int[] tamanhos = calcados.stream().mapToInt(Calcado::getTamanho).toArray();    
     
         public static void  mostrarProdutos() {
             System.out.println("Mostrar Todos os Produtos");
