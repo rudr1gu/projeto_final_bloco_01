@@ -5,11 +5,26 @@
 ### Descrição
 Este projeto é o trabalho final do Bloco 1 do Bootcamp Generation. Trata-se de um sistema de ecommerce básico que permite a gestão de produtos.
 
-### Estrutura do Projeto
-- `/src`: menu.
-- `/src/model` : Calcados, Tennis, Chuteira, Bota
-- `/src/database` : CalcadosEstoque
-- `/src/util`: Cores, KeyPress, MenuView
-- `/src/repository`: CalcadoRepository
-- `/src/services`: MenuServices
-- `/src/controller`: CalcadoController
+### Estrutura de pastas
+
+```
+src/
+├── controller/
+│   ├── CalcadoController.java
+├── database/
+│   ├── CalcadoEstoque.java
+├── model/
+│   ├── Bota.java
+│   ├── Calcado.java
+│   ├── Chuteira.java
+│   ├── Tennis.java
+├── repository/
+│   ├── CalcadoRepository.java
+├── services/
+│   ├── MenuServices.java
+├── util/
+│   ├── Cores.java
+│   ├── KeyPress.java
+│   ├── MenuView.java
+├── Menu.java
+```
